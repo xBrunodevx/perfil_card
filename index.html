@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Card</title>
+  <style>
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("1318811.png"); /* imagem na mesma pasta do HTML */
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+    .container {
+      background-color: #1e1e1e;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 390px;
+      min-height: 620px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      position: relative;
+    }
+
+    .header {
+      position: relative;
+    }
+
+    /* Agora o header-bg será uma imagem real */
+    .header-bg {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile {
+      position: absolute;
+      bottom: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      border: 5px solid #1e1e1e;
+      overflow: hidden;
+      width: 140px;
+      height: 140px;
+      background: #555;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 100px 30px 40px;
+    }
+
+    .content h2 {
+      margin: 0;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .content p {
+      margin: 15px 0 40px;
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 0;
+      border-radius: 10px;
+      transition: transform 0.2s ease, opacity 0.3s ease;
+      font-size: 16px;
+    }
+
+    .social-links a img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .social-links a:hover {
+      opacity: 0.85;
+      transform: scale(1.1);
+    }
+
+    /* Cores específicas */
+    .social-links a:nth-child(1) { background-color: #0a66c2; }
+    .social-links a:nth-child(2) { background-color: #d93025; }
+    .social-links a:nth-child(3) { background-color: #24292e; }
+    .social-links a:nth-child(4) { background-color: #ff0000; }
+
+    /* Ícone do Python separado */
+    .python-icon {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .python-icon img {
+      width: 60px;
+      height: 60px;
+      filter: drop-shadow(0 0 5px #306998);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <!-- Aqui você coloca seu banner -->
+      <img class="header-bg" src="D:\cardemputhon\banner.jpg" alt="Banner" />
+      
+      <div class="profile">
+        <img src="perfil.jpg" alt="Foto de Perfil" />
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Bruno Fernandes</h2>
+      <p>Desenvolvedor Back-end | Python</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/xbruno-fernandesx/" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+          LinkedIn
+        </a>
+        <a href="mailto:brunofernandesfeitosa1@gmail.com">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail" />
+          Gmail
+        </a>
+        <a href="https://github.com/xBrunodevx" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          GitHub
+        </a>
+      </div>
+
+      <!-- Ícone do Python separado -->
+      <div class="python-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
